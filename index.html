@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhoomika J. E. | Personal Portfolio</title>
+  <style>
+    :root {
+      --page-bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #5b6472;
+      --border: #dde3ec;
+      --accent: #3157a4;
+      --accent-soft: #edf2ff;
+      --shadow: 0 10px 28px rgba(30, 41, 59, 0.07);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      background: var(--page-bg);
+      color: var(--text);
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.97);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 22px;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      color: var(--text);
+      text-decoration: none;
+      margin: 4px 12px;
+      padding: 7px 9px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+    nav a:hover,
+    nav a:focus-visible {
+      background: var(--accent-soft);
+      color: var(--accent);
+      outline: none;
+    }
+    header {
+      background: #1f2f52;
+      color: #fff;
+      text-align: center;
+      padding: 84px 20px 72px;
+    }
+    header .eyebrow {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+    header h1 {
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      margin-bottom: 10px;
+      line-height: 1.15;
+    }
+    header p { font-size: 1.08rem; }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 30px 22px 10px;
+    }
+    section {
+      background: var(--surface);
+      margin: 0 0 28px;
+      padding: 36px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      scroll-margin-top: 80px;
+    }
+    section h2 {
+      font-size: clamp(1.65rem, 4vw, 2rem);
+      line-height: 1.2;
+      margin-bottom: 18px;
+      color: #182230;
+    }
+    section p { color: var(--text); }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fbfcff;
+      display: flex;
+      flex-direction: column;
+      min-height: 210px;
+    }
+    .project-card:nth-child(1) { border-top: 5px solid #3157a4; }
+    .project-card:nth-child(2) { border-top: 5px solid #6d4fa1; }
+    .project-card h3 {
+      font-size: 1.25rem;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .project-card p {
+      color: var(--muted);
+      flex: 1;
+    }
+    .project-card a,
+    #contact a {
+      display: inline-block;
+      margin-top: 14px;
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .project-card a:hover,
+    #contact a:hover { text-decoration: underline; }
+    .activities {
+      margin-top: 20px;
+      padding-left: 22px;
+    }
+    .activities li {
+      margin-bottom: 11px;
+      color: var(--muted);
+    }
+    .activities strong { color: var(--text); }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      list-style: none;
+    }
+    .skills li {
+      padding: 9px 14px;
+      background: var(--accent-soft);
+      border: 1px solid #d8e1fb;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    #contact p { margin-bottom: 8px; }
+    footer {
+      text-align: center;
+      padding: 32px 20px 40px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    @media (max-width: 760px) {
+      nav { padding: 11px 14px; }
+      nav a { margin: 3px 5px; padding: 6px 8px; }
+      header { padding: 68px 18px 58px; }
+      main { padding: 22px 14px 4px; }
+      section { padding: 26px 22px; margin-bottom: 20px; }
+      .project-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 420px) {
+      header h1 { font-size: 2.1rem; }
+      header p { font-size: 1rem; }
+      section { padding: 22px 18px; }
+      .skills li { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <div class="eyebrow">Personal Portfolio</div>
+    <h1>Bhoomika J. E.</h1>
+    <p>3rd Semester • Computer Science and Engineering</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a third-semester Computer Science and Engineering student developing
+        my programming and problem-solving skills through practical activities
+        and projects. I have been learning programming, Git and GitHub, SQL,
+        and algorithmic problem solving while building and documenting my work.
+        My goal is to strengthen my technical foundation and continue growing
+        toward a career as a software engineer.
+      </p>
+
+      <h3 style="margin-top:26px; margin-bottom:10px;">Previous Activities</h3>
+      <ul class="activities">
+        <li><strong>Activity 1 – VS Code Setup:</strong> Set up and verified my programming environment using Visual Studio Code.</li>
+        <li><strong>Activity 2 – Git &amp; GitHub Setup:</strong> Practiced repositories, commits, tracking files, and pushing work to GitHub.</li>
+        <li><strong>Activity 3 – GitLens &amp; Live Share:</strong> Practiced Git-aware collaboration and the basic workflow of pair programming.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Hello World Repository</h3>
+          <p>A GitHub repository containing my Hello World work from the earlier activities.</p>
+          <a href="https://github.com/bhoomikaje29-cloud/Hello-World-C" target="_blank" rel="noopener">
+            View Hello World Repository
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3>LeetCode Solutions Repository</h3>
+          <p>A GitHub repository for my LeetCode problem-solving practice, with solutions organized across arrays and strings, basic algorithms, and stacks.</p>
+          <a href="https://github.com/bhoomikaje29-cloud/LeetCode-solutions" target="_blank" rel="noopener">
+            View LeetCode Repository
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>C</li>
+        <li>Java</li>
+        <li>SQL/MySQL</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Visual Studio Code</li>
+        <li>Problem Solving</li>
+        <li>Data Structures and Algorithms</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>GitHub repositories are provided below for viewing my work.</p>
+      <p><a href="https://github.com/bhoomikaje29-cloud/Hello-World-C" target="_blank" rel="noopener">Hello World Repository</a></p>
+      <p><a href="https://github.com/bhoomikaje29-cloud/LeetCode-solutions" target="_blank" rel="noopener">LeetCode Solutions Repository</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Bhoomika J. E. • Computer Science and Engineering</p>
+  </footer>
+</body>
+</html>
